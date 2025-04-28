@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Competencias</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Competencias Deportivas</h1>
+    </header>
+
+    <main>
+        <section id="registroSection" class="active">
+            <h2>Regístrate para Competir</h2>
+            <form id="registroForm">
+                <input type="text" id="nombre" placeholder="Nombre completo" required>
+                <input type="email" id="correo" placeholder="Correo electrónico" required>
+                <input type="number" id="edad" placeholder="Edad" required>
+                <select id="genero" required>
+                    <option value="">Selecciona tu género</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <input type="text" id="ciudad" placeholder="Ciudad" required>
+                <button type="submit">Registrarme</button>
+            </form>
+        </section>
+
+        <section id="competenciasSection">
+            <h2 id="bienvenida"></h2>
+            <div id="competenciasContainer" class="competencias-grid"></div>
+        </section>
+    </main>
+    
+<div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="cerrarModal" class="close">&times;</span>
+      <div id="infoCompetencia"></div>
+    </div>
+  </div>
+
+  <div id="propaganda"></div>
+  
+
+    <script src="main.js"></script>
+</body>
+</html>
+
